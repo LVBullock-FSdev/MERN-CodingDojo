@@ -1,4 +1,5 @@
 Prop It Up
+Laura V. Bullock 5/13/2021
 
 Create a component called PersonCard that accepts the following props: 
 
@@ -19,9 +20,9 @@ function
 
 
 
->> Create a new component called PersonCard to display a single person's set of information using props for values
+Create a new component called PersonCard to display a single person's set of information using props for values
 
->> Call the Person component repeatedly using different prop values to display 4 unique sets of information
+Call the Person component repeatedly using different prop values to display 4 unique sets of information
 
 *******************************************
 
