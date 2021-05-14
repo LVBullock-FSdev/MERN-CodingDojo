@@ -1,5 +1,4 @@
 Prop It Up
-Laura V. Bullock 5/13/2021
 
 Create a component called PersonCard that accepts the following props: 
 
