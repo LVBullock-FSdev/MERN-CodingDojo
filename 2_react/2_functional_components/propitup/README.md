@@ -1,4 +1,4 @@
-Prop It Up
+Prop It Up Assignment
 
 Create a component called PersonCard that accepts the following props: 
 
