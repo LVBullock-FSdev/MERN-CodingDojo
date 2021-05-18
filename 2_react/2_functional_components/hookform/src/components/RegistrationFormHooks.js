@@ -7,14 +7,14 @@ const RegistrationFormHooks = (props) =>{
     const [password, setPassword] = useState(props.password);
     const [confPassword, setConfPassword] = useState(props.confPassword);
 
-    const onChangeHandler = (event) =>{
-        setFirstName( { firstName } );
-        setLastName( { lastName } );
-        setEmail( { email } );
-        setPassword( { password } );
-        setConfPassword( { confPassword } );
+    // const onChangeHandler = (event) =>{
+    //     setFirstName( { firstName } );
+    //     setLastName( { lastName } );
+    //     setEmail( { email } );
+    //     setPassword( { password } );
+    //     setConfPassword( { confPassword } );
 
-    };
+    // };
 
     const moduleStyle = {
         textAlign: "left",
