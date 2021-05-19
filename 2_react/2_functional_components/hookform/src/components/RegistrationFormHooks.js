@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 
 const RegistrationFormHooks = (props) =>{
-    const [firstName, setFirstName] = useState(props.firstName);
-    const [lastName, setLastName] = useState(props.lastName);
-    const [email, setEmail] = useState(props.email);
-    const [password, setPassword] = useState(props.password);
-    const [confPassword, setConfPassword] = useState(props.confPassword);
+    // const [firstName, setFirstName] = useState(props.firstName);
+    // const [lastName, setLastName] = useState(props.lastName);
+    // const [email, setEmail] = useState(props.email);
+    // const [password, setPassword] = useState(props.password);
+    // const [confPassword, setConfPassword] = useState(props.confPassword);
+
+    //This is a shorter way to achieve what's above
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confPassword, setConfPassword] = useState("");
+
+
 
 
     const moduleStyle = {
