@@ -18,9 +18,17 @@ const RegistrationFormErrorMessages = (props) =>{
             password,
             confPassword };
 
-        console.log("Welcome " + newUser);
+        console.log("User successfully added:\nUser Name:  " + newUser.firstName + " " + newUser.lastName + "\nEmail Address:  " + newUser.email);
         setformSubmitted( true );
+
+        //reset the value in state for text input (resets the form)   
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPassword("");
+        setConfPassword("");
     };
+
 
     const moduleStyle = {
         textAlign: "left",
@@ -35,7 +43,7 @@ const RegistrationFormErrorMessages = (props) =>{
         <form onSubmit={ (e) => submitUser(e) }>
             {
                 formSubmitted ?
-                <h3>Thank you for submitting the form!</h3>:
+                <h3>Thank you for submitting the form</h3>:
                 <h3>Welcome, please submit the form.</h3>
             }
 
@@ -73,7 +81,7 @@ const RegistrationFormErrorMessages = (props) =>{
 
                 <div className="divider">
                     <label htmlFor="password">Password: </label>
-                    <input type="text" value={ password } onChange={ (e) => setPassword( e.target.value ) }/>
+                    <input type="password" value={ password } onChange={ (e) => setPassword( e.target.value ) }/>
 
                     {
                         password.length > 0 && password.length < 8 ?
@@ -84,7 +92,7 @@ const RegistrationFormErrorMessages = (props) =>{
 
                 <div className="divider">
                     <label htmlFor="confPassword">Confirm Password: </label>
-                    <input type="text" value={ confPassword } onChange={ (e) => setConfPassword( e.target.value ) }/>
+                    <input type="password" value={ confPassword } onChange={ (e) => setConfPassword( e.target.value ) }/>
 
                     {
                         confPassword !== password ?
@@ -96,7 +104,7 @@ const RegistrationFormErrorMessages = (props) =>{
                 <button type="submit" onSubmit={ (e) => setformSubmitted() }>Create User</button>
         </form>
 
-        
+        <hr></hr>
         <h3>Your Form Data:</h3>
 
         <div style={ moduleStyle }>
