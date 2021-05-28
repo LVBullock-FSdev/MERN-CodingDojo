@@ -21,12 +21,12 @@ function App() {
             console.log(this.label, "clicked");
           } 
         },
-          {label: "Tab 4", content: "Tab 4, you have the floor.", 
+          {label: "Tab 4", content: "Tab 4 has the floor.", 
           callback(){
             console.log(this.label, "clicked");
           } 
         },
-          {label: "Tab 5", content: "Tab 5, done ~~ High Five.", 
+          {label: "Tab 5", content: "Tab 5 --> GO LIVE!!", 
           callback(){
             console.log(this.label, "clicked");
           } 

@@ -4,48 +4,43 @@ const Tabs = (props) => {
     console.log(props);
     const [selectedTab, setSelectedTab] = useState(0);  //0 is default value for selectedTab
     return (
-        <div style={{ marginTop: "20px"}}>
-            <h1>Tabs Assignment</h1><br></br>
-            <header>
-                {props.tabButtons.map((tab, i) =>{
+        <div id="container">
 
-                    const tabButtonStyles = {
-                        padding: "20px", 
-                        marginRight: "10px", 
-                        border: "1px solid gray"
-                    }
+            <div id="header">
+                <h1>Tabs Assignment</h1>
+                    {props.tabButtons.map((tab, i) =>{
 
-                    if (selectedTab === i) {
-                        tabButtonStyles.backgroundColor = "purple";
-                        tabButtonStyles.color = "white";
-                    }
+                        const tabButtonStyles = {
+                            padding: "20px", 
+                            marginRight: "10px", 
+                            border: "1px solid gray"
+                        }
 
-                    return (
-                        <span 
-                        key={i}
-                            onClick={(event) =>{
-                                setSelectedTab(i);
-                                props.tabButtons[i].callback();
-                            }}
+                        if (selectedTab === i) {
+                            tabButtonStyles.backgroundColor = "purple";
+                            tabButtonStyles.color = "white";
+                        }
 
-                            style={tabButtonStyles}>
+                        return (
+                            <span 
+                            key={i}
+                                onClick={(event) =>{
+                                    setSelectedTab(i);
+                                    props.tabButtons[i].callback();
+                                }}
 
-                                {tab.label}
-                        </span>
-                    );
-                })}
-            </header><br></br>
+                                style={tabButtonStyles}>
 
-            <main style={{
-                margin: "auto", 
-                marginTop: "20px",
-                border: "1px solid gray", 
-                padding: "20px",
-                width: "50%",
-                color: "red"}}>
+                                    {tab.label}
+                            </span>
+                        );
+                    })}
+            </div>
+
+            <div id="main">
                 <h3>{ props.tabButtons[selectedTab].content }</h3>
-                
-            </main>
+            </div>
+
         </div>
     );
 };
