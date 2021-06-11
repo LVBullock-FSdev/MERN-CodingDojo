@@ -40,7 +40,7 @@ function App() {
           <div className="List" key={ index }>
             <ul>
               <li>
-              <h3>&#10051; { pokemon.name }</h3>
+              <h4>&#10051; { pokemon.name }</h4>
               </li>
             </ul>
           </div>
