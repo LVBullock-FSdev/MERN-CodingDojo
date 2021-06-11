@@ -10,7 +10,7 @@ const fiveHeads = new Promise ( (resolve, reject) => {
     while( headsCount < 5 ) {
         attempts++;
         let result = tossCoin();
-        // console.log(`${result} was flipped`);
+        // console.log(`${result} was flipped`);  \\using back ticks here, NOT single quotes
 
         console.log( `Coin toss # ${attempts} -->\t ${result}` );
 
