@@ -1,4 +1,4 @@
-Routing Practice  - Single Page Application
+Routing Practice Assignment - Single Page Application
 
 Create a simple React app that can handle the following routes:
 
