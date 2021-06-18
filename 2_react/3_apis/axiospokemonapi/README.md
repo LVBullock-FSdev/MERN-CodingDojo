@@ -1,4 +1,5 @@
-Axios Pokemon API
+Axios Pokemon API Assignment (Optional)
+
 Redo the previous assignment using axios. Using the previous lesson as a starting point, create a React project that uses the useEffect hook to display the names of all 807 Pokemon using the Pokemon API. 
 
 Using Axios in this assignment.
@@ -11,6 +12,7 @@ NOTE: The button seen in the wireframe is not required for this assignment
 
 Using Axios, output the names of all *807 Pokemon immediately when the page renders.  *Website lists 1098 pokemon.
 
+*****************
 
 # Getting Started with Create React App
 
